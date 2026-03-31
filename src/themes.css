@@ -1,0 +1,412 @@
+/* =============================================
+   RESUME THEME STYLES (Print & Preview)
+   ============================================= */
+
+/* Base Page Setup for all themes */
+.resume-page {
+  background: white;
+  width: 100%;
+  aspect-ratio: 8.5 / 11; /* US Letter */
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  /* Font smoothing for crisp rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base components common to many themes */
+.theme-profile-wrap {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.theme-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -------------------------------------------
+   1. Theme: MODERN (Original)
+   ------------------------------------------- */
+.theme-modern {
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  display: flex;
+}
+.theme-modern .mod-left {
+  width: 32%;
+  background: #f8fafc;
+  padding: 40px 30px;
+  border-right: 1px solid #e2e8f0;
+}
+.theme-modern .mod-right {
+  width: 68%;
+  padding: 40px;
+}
+.theme-modern .mod-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+}
+.theme-modern .mod-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.theme-modern .mod-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+.theme-modern .mod-contact-item {
+  font-size: 11px;
+  color: #475569;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.4;
+}
+.theme-modern .mod-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 8px;
+}
+.theme-modern .mod-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 2px;
+}
+.theme-modern .mod-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.theme-modern .mod-skill {
+  background: #e2e8f0;
+  color: #334155;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.theme-modern .mod-summary {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 30px;
+}
+.theme-modern .mod-entry {
+  margin-bottom: 22px;
+  position: relative;
+}
+.theme-modern .mod-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+.theme-modern .mod-role { font-size: 14px; font-weight: 700; color: #0f172a; }
+.theme-modern .mod-company { font-size: 13px; font-weight: 500; color: #3b82f6; }
+.theme-modern .mod-date { font-size: 11px; font-weight: 500; color: #64748b; }
+.theme-modern .mod-desc {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #475569;
+}
+.theme-modern ul { padding-left: 16px; margin: 6px 0 0; }
+.theme-modern li { margin-bottom: 4px; }
+
+/* -------------------------------------------
+   2. Theme: CLASSIC
+   ------------------------------------------- */
+.theme-classic {
+  font-family: 'Times New Roman', Times, serif;
+  color: #111;
+  padding: 40px 50px;
+}
+.theme-classic .cla-header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.theme-classic .cla-name {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.theme-classic .cla-contact {
+  font-size: 12px;
+  color: #333;
+}
+.theme-classic .cla-section {
+  margin-bottom: 20px;
+}
+.theme-classic .cla-section-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+.theme-classic .cla-entry {
+  margin-bottom: 12px;
+}
+.theme-classic .cla-entry-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.theme-classic .cla-title { font-weight: bold; font-size: 13px; }
+.theme-classic .cla-date { font-style: italic; font-size: 12px; }
+.theme-classic .cla-subtitle { font-style: italic; font-size: 12px; margin-bottom: 3px; }
+.theme-classic .cla-desc { font-size: 12px; line-height: 1.4; color: #333; }
+.theme-classic ul { padding-left: 18px; margin: 4px 0 0; }
+.theme-classic li { margin-bottom: 2px; }
+
+/* -------------------------------------------
+   3. Theme: MINIMAL
+   ------------------------------------------- */
+.theme-minimal {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  padding: 50px;
+}
+.theme-minimal .min-header { margin-bottom: 30px; display: flex; align-items: center; gap: 20px; }
+.theme-minimal .min-name { font-size: 36px; font-weight: 300; letter-spacing: -1px; margin-bottom: 4px; }
+.theme-minimal .min-title { font-size: 14px; color: #666; font-weight: 500; }
+.theme-minimal .min-contact {
+  font-size: 11px;
+  color: #888;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.theme-minimal .min-grid { display: grid; grid-template-columns: 1fr 2.5fr; gap: 30px; margin-bottom: 25px; }
+.theme-minimal .min-section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #999; text-align: right; margin-top: 2px; }
+.theme-minimal .min-entry { margin-bottom: 20px; }
+.theme-minimal .min-role { font-size: 14px; font-weight: 500; margin-bottom: 2px; }
+.theme-minimal .min-company { font-size: 13px; color: #666; margin-bottom: 5px; }
+.theme-minimal .min-date { font-size: 11px; color: #999; margin-bottom: 6px; }
+.theme-minimal .min-desc { font-size: 12px; line-height: 1.5; color: #444; }
+.theme-minimal ul { padding-left: 15px; margin: 0; }
+.theme-minimal li { margin-bottom: 3px; }
+
+/* -------------------------------------------
+   4. Theme: BOLD
+   ------------------------------------------- */
+.theme-bold {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.theme-bold .bld-header { background: #1a202c; color: white; padding: 40px 50px; display: flex; justify-content: space-between; align-items: center;}
+.theme-bold .bld-name { font-size: 38px; font-weight: 900; letter-spacing: -1px; margin-bottom: 5px; }
+.theme-bold .bld-title { font-size: 16px; color: #a0aec0; font-weight: 500; }
+.theme-bold .bld-contact { text-align: right; font-size: 11px; color: #cbd5e0; line-height: 1.6; }
+.theme-bold .bld-body { padding: 40px 50px; flex: 1; }
+.theme-bold .bld-section { margin-bottom: 30px; }
+.theme-bold .bld-section-title { font-size: 18px; font-weight: 800; text-transform: uppercase; color: #1a202c; border-bottom: 4px solid #1a202c; display: inline-block; padding-bottom: 4px; margin-bottom: 15px; }
+.theme-bold .bld-entry { margin-bottom: 20px; }
+.theme-bold .bld-entry-head { display: flex; justify-content: space-between; align-items: baseline; }
+.theme-bold .bld-role { font-size: 16px; font-weight: 800; }
+.theme-bold .bld-company { font-size: 14px; font-weight: 600; color: #4a5568; }
+.theme-bold .bld-date { background: #edf2f7; color: #4a5568; padding: 2px 8px; font-size: 11px; font-weight: 600; border-radius: 2px; }
+.theme-bold .bld-desc { font-size: 12px; line-height: 1.5; color: #2d3748; margin-top: 6px; }
+.theme-bold ul { padding-left: 15px; }
+
+/* -------------------------------------------
+   5. Theme: EXECUTIVE (New)
+   ------------------------------------------- */
+.theme-exec {
+  font-family: 'Garamond', 'Georgia', serif;
+  color: #2b2b2b;
+  padding: 45px 55px;
+}
+.theme-exec .exec-header {
+  border-bottom: 1px solid #777;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.theme-exec .exec-name {
+  font-size: 34px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #111;
+}
+.theme-exec .exec-contact {
+  font-size: 11px;
+  color: #555;
+  margin-top: 5px;
+  display: flex;
+  gap: 12px;
+}
+.theme-exec .exec-section-title {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #111;
+  background: #f7f7f7;
+  padding: 4px 8px;
+  margin-bottom: 15px;
+  border-left: 3px solid #333;
+}
+.theme-exec .exec-entry { margin-bottom: 18px; }
+.theme-exec .exec-entry-head { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.theme-exec .exec-role { font-size: 14px; font-weight: bold; }
+.theme-exec .exec-company { font-size: 13px; font-style: italic; color: #444; }
+.theme-exec .exec-date { font-size: 12px; color: #666; }
+.theme-exec .exec-desc { font-size: 12px; line-height: 1.5; }
+.theme-exec ul { padding-left: 18px; margin: 4px 0 0; }
+
+/* -------------------------------------------
+   6. Theme: STARTUP (New)
+   ------------------------------------------- */
+.theme-startup {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 50px;
+}
+.theme-startup .sup-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.theme-startup .sup-name {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #000;
+  line-height: 1;
+}
+.theme-startup .sup-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  color: #0066ff;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.theme-startup .sup-contact { font-size: 12px; color: #666; text-align: right; line-height: 1.5; }
+.theme-startup .sup-section { margin-bottom: 25px; }
+.theme-startup .sup-section-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0066ff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.theme-startup .sup-entry { margin-bottom: 20px; }
+.theme-startup .sup-role { font-size: 15px; font-weight: bold; }
+.theme-startup .sup-company { color: #555; font-size: 14px; margin-left: 8px; }
+.theme-startup .sup-date { font-family: 'Courier New', Courier, monospace; font-size: 11px; color: #888; margin-top: 2px; margin-bottom: 6px; }
+.theme-startup .sup-desc { font-size: 13px; line-height: 1.6; }
+.theme-startup ul { padding-left: 16px; margin: 0; }
+
+/* -------------------------------------------
+   7. Theme: ACADEMIC (New)
+   ------------------------------------------- */
+.theme-academic {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #000;
+  padding: 50px 60px;
+}
+.theme-academic .aca-header { text-align: center; margin-bottom: 25px; display: flex; flex-direction: column; align-items: center; }
+.theme-academic .aca-name { font-size: 28px; font-weight: bold; margin-bottom: 5px; }
+.theme-academic .aca-contact { font-size: 12px; }
+.theme-academic .aca-section-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.theme-academic .aca-entry { margin-bottom: 12px; display: flex; gap: 20px; }
+.theme-academic .aca-date { width: 100px; flex-shrink: 0; font-size: 12px; }
+.theme-academic .aca-content { flex: 1; font-size: 12px; line-height: 1.5; }
+.theme-academic .aca-title { font-weight: bold; }
+.theme-academic .aca-subtitle { font-style: italic; }
+
+/* -------------------------------------------
+   8. Theme: CREATIVE (New)
+   ------------------------------------------- */
+.theme-creative {
+  font-family: 'Inter', sans-serif;
+  color: #2b1c50;
+  display: flex;
+}
+.theme-creative .cre-left {
+  width: 35%;
+  background: #f4f0ff;
+  padding: 40px 30px;
+}
+.theme-creative .cre-right {
+  width: 65%;
+  padding: 40px;
+}
+.theme-creative .cre-header { margin-bottom: 30px; }
+.theme-creative .cre-name { font-size: 32px; font-weight: 900; color: #5a32fa; line-height: 1.1; margin-bottom: 6px; }
+.theme-creative .cre-title { font-size: 14px; font-weight: 600; color: #2b1c50; }
+.theme-creative .cre-section-title {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #5a32fa;
+  margin-bottom: 15px;
+}
+.theme-creative .cre-contact { font-size: 11px; margin-bottom: 30px; line-height: 1.8; color: #4a3a70; }
+.theme-creative .cre-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 30px; }
+.theme-creative .cre-skill {
+  border: 1px solid #dcd1ff;
+  color: #5a32fa;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.theme-creative .cre-entry { margin-bottom: 25px; border-left: 2px solid #e9e4f5; padding-left: 15px; position: relative; }
+.theme-creative .cre-entry::before {
+  content: ''; position: absolute; left: -6px; top: 4px; width: 10px; height: 10px; background: #5a32fa; border-radius: 50%;
+}
+.theme-creative .cre-role { font-size: 15px; font-weight: 800; }
+.theme-creative .cre-company { font-size: 13px; font-weight: 600; color: #7b61ff; }
+.theme-creative .cre-date { font-size: 11px; color: #8c7abf; margin-bottom: 6px; }
+.theme-creative .cre-desc { font-size: 12px; line-height: 1.6; color: #2b1c50; }
+.theme-creative ul { padding-left: 16px; margin: 0; }
